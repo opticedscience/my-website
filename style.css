@@ -348,3 +348,43 @@ button:hover {
   width: 20px; /* Slightly smaller for a cleaner look in the header */
   height: auto;
 }
+
+/* Container for both columns */
+.contact_grid {
+  display: flex;
+  gap: 40px; /* Space between the two columns */
+  margin-top: 10px;
+}
+
+/* Individual columns */
+.contact_column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Vertical space between rows in a column */
+}
+
+/* Ensure links inherit the light green color and don't break the layout */
+.contact_info a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+.contact_info a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Fix icon sizing for consistency */
+.contact_info img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
+/* Ensure the header expands to fit the new lines */
+#home {
+  height: auto; /* Changed from fixed 5mm to auto */
+  min-height: 80px; 
+}
+
