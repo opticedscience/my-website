@@ -118,48 +118,54 @@ h2 {
 
 .all_skills {
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  flex-wrap: wrap;   /* simplified */
+  justify-content: center;  /* optional improvement */
 }
 
 .skill {
   border: 1px solid gray;
-  display: block;
   border-radius: 6px;
   text-align: center;
-  margin: 50px;
-  padding: 10px;
-  width: 2in;
-  font-size: 20px;
+  margin: 30px;
+  padding: 15px;
+  width: 220px;      /* better than 2in */
+  font-size: 18px;
   box-shadow: 0 3px 10px gray;
 }
 
 .skill img {
   height: 35px;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
 }
 
-.skills h6 {
-  align-items: center;
-  font-size: 20px;
-  margin-block-start: 8px;
-  margin-block-end: 5px;
-  font-weight: bold;
-} 
-
-.skills p {
-  align-items: center;
-  font-size: 15px;
-  color: gray;
-  margin-block-start: 5px;
-  margin-block-end: 5px;
-} 
-
-.flex_center {
+/* 👇 INSERT HERE */
+.skill-icons {
   display: flex;
-  align-items: center;
+  gap: 8px;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
 }
+
+.skill-icons img {
+  height: 35px;
+  width: auto;
+}
+
+/* Fix selector — should match id="skills" */
+#skills h4 {
+  font-size: 18px;
+  margin: 8px 0 5px 0;
+  font-weight: bold;
+}
+
+#skills p {
+  font-size: 14px;
+  color: gray;
+  margin: 5px 0;
+}
+
 
 /* Projects */
 
