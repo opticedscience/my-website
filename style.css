@@ -330,3 +330,21 @@ button:hover {
   text-align: center;
   cursor: pointer;
 }
+
+/* Styling for links within the contact info section */
+.contact_info a {
+  color: greenyellow;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact_info a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Ensure the icons in the header are uniform in size */
+.contact_info img {
+  width: 20px; /* Slightly smaller for a cleaner look in the header */
+  height: auto;
+}
