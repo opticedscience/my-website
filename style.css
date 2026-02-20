@@ -7,38 +7,41 @@ body {
 #home {
   background-color: #7600bc;
   margin: -1cm -1cm 0 -1cm;
-  padding: 1.5cm 2cm;
-  height: auto;             /* Let it grow with content */
-  display: flex;            /* Added flex to align menu and name */
-  justify-content: space-between; 
-  align-items: flex-start;  /* Keeps items at the top */
-}
-
-.profile_name {
-  flex: 1;                  /* Takes up available space on the left */
-  color: greenyellow;
-  font-size: 20px;
-}
-
-.topdiv {
-  display: flex;            /* Horizontal menu */
-  gap: 10px;
-  margin-top: 10px;         /* Adjust this to vertically center with your name */
-}
-
-/* Ensure images show up and are sized correctly */
-.contact_info img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: middle;
+  padding: 1cm 2cm;
+  /* REMOVE height: 5mm; */
+  height: auto;             /* This lets the purple background wrap everything */
+  display: flex;            /* Positions name on left, menu on right */
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contact_row {
+  display: flex;            /* This tiles Email/GitHub and Phone/Coursera horizontally */
+  gap: 50px;                /* Spacing between the columns */
+  margin-top: 5px;
+}
+
+.contact_info {
   display: flex;
-  gap: 40px;                /* Space between Email and GitHub */
-  margin-bottom: 5px;
+  align-items: center;
+  width: 300px;             /* Ensures columns align perfectly */
+  font-size: 15px;
+  color: greenyellow;
+}
+
+.topdiv {
+  /* No float needed with Flexbox */
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;        /* Moves menu down slightly to align with name */
+}
+
+/* Ensure icons are visible and sized */
+.contact_info img {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 10px;
+  object-fit: contain;
 }
 
 
