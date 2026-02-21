@@ -36,6 +36,17 @@ body {
   padding-top: 10px;        /* Moves menu down slightly to align with name */
 }
 
+.topmenu {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.topmenu:hover {
+  text-decoration: underline;
+}
+
 /* Ensure icons are visible and sized */
 .contact_info img {
   width: 20px !important;
@@ -90,9 +101,10 @@ h2 {
 }
 
 #about-me p {
-  font-size: 25px;
+  font-size: 18px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
+  line-height: 1.6;
 }
 
 .profile_image {
@@ -100,6 +112,8 @@ h2 {
   height: fit-content;
   vertical-align: middle;
   margin: 5px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Skills */
@@ -119,6 +133,13 @@ h2 {
   width: 220px;      /* better than 2in */
   font-size: 18px;
   box-shadow: 0 3px 10px gray;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(118, 0, 188, 0.2);
 }
 
 .skill img {
@@ -143,13 +164,13 @@ h2 {
 
 /* Fix selector — should match id="skills" */
 #skills h4 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 8px 0 5px 0;
   font-weight: bold;
 }
 
 #skills p {
-  font-size: 14px;
+  font-size: 16px;
   color: gray;
   margin: 5px 0;
 }
@@ -170,7 +191,11 @@ h2 {
 
 .project-card {
   margin: 0 15px 15px 30px;
+  padding: 20px;
   padding-bottom: 5px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .project-card h3 {
