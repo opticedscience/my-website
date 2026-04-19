@@ -85,6 +85,7 @@ h2 {
 
 .container {
   display: flex;
+  gap: 30px;
 }
 
 /* About Me */
